@@ -159,9 +159,9 @@ cran %>%
 
 7. Elige aquellas descargas realizadas desde España (ES), o Portugal (PT).
 ```{r}
-
-
-
+#Tenemos que elegir aquellas descargas realizadas desde España (ES), o Portugal (PT).
+cran %>%
+  filter(country %in% c("ES","PT"))
 ```
 
 8. Elige aquellas descargas cuyo tamaño supera los 100500 bytes desde un sistema operativo  `linux-gnu`.
