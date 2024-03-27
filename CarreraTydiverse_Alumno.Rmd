@@ -245,7 +245,12 @@ cran3 %>%
 
 19. Crea un agrupamiento del tibble `cran` según la variable `package` y almacénalo en la variable `by_package`. Observa el nuevo elemento creado y aunque aparentemente no hay cambio al principio, se indica que se ha hecho un agrupamiento. Éste agrupamiento se puede deshacer con la función `ungroup`.
 ```{r}
-
+#Creamos un agrupamiento del tibble cran según la variable package y almacénalo en la variable by_package.
+by_package <- cran %>%
+  group_by(package)
+by_package
+#Deshacemos el agrupamiento con la función ungroup.
+ungroup(by_package)
 
 ```
 
