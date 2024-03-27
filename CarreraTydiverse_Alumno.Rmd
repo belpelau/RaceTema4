@@ -137,7 +137,9 @@ glimpse(cran)
 
 4. Elige únicamente las variables `ip_id, package, country`
 ```{r}
-
+#Para elegir únicamente algunas variables, usamos select.
+cran1 <- select(cran, ip_id, package, country)
+cran1
 ```
 5. Elige todas las variables entre `r_arch y country` 
 ```{r}
